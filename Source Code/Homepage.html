@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Planner</title>
+
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    
+    <link rel="stylesheet" href="css/Homepage.css">
+    <style>
+        body {font-family: Arial, Helvetica, sans-serif;}
+        
+        
+        input[type=text], input[type=password] {
+          width: 100%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          display: inline-block;
+          border: 1px solid #ccc;
+          box-sizing: border-box;
+        }
+        
+        
+        button {
+          background-color: #04AA6D;
+          color: white;
+          padding: 14px 20px;
+          margin: 8px 0;
+          border: none;
+          cursor: pointer;
+          width: 100%;
+        }
+        
+        button:hover {
+          opacity: 0.8;
+        }
+        
+        
+        .cancelbtn {
+          width: auto;
+          padding: 10px 18px;
+          background-color: #f44336;
+        }
+        
+        
+        .imgcontainer {
+          text-align: center;
+          margin: 24px 0 12px 0;
+          position: relative;
+        }
+        
+        
+      
+        
+        span.psw {
+          float: right;
+          padding-top: 16px;
+        }
+        
+       
+        .modal {
+          display: none; 
+          position: fixed; 
+          z-index: 1; 
+          left: 0;
+          top: 0;
+          width: 100%; 
+          height: 100%;
+          overflow: auto; 
+          background-color: rgb(0,0,0); 
+          background-color: rgba(0,0,0,0.4); 
+          padding-top: 60px;
+        }
+        
+        
+        .modal-content {
+          background-color: #fefefe;
+          margin: 5% auto 15% auto; 
+          border: 1px solid #888;
+          width: 80%; 
+        }
+        
+        
+        .close {
+          position: absolute;
+          right: 25px;
+          top: 0;
+          color: #000;
+          font-size: 35px;
+          font-weight: bold;
+        }
+        
+        .close:hover,
+        .close:focus {
+          color: red;
+          cursor: pointer;
+        }
+        
+      
+        .animate {
+          -webkit-animation: animatezoom 0.6s;
+          animation: animatezoom 0.6s
+        }
+        
+        @-webkit-keyframes animatezoom {
+          from {-webkit-transform: scale(0)} 
+          to {-webkit-transform: scale(1)}
+        }
+          
+        @keyframes animatezoom {
+          from {transform: scale(0)} 
+          to {transform: scale(1)}
+        }
+        
+       
+        @media screen and (max-width: 300px) {
+          span.psw {
+             display: block;
+             float: none;
+          }
+          .cancelbtn {
+             width: 100%;
+          }
+        }
+        </style>
+
+</head>
+
+<body>
+    
+
+
+<header>
+    
+  
+    <a href="Homepage.html"> <img src="th.jfif" class="avt"></a>
+
+    <div id="menu-bar" class="fas fa-bars"></div>
+
+    <nav class="navbar">
+        <a href="Homepage.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="Gallery.html">Gallery</a>
+        <a href="contactus.html">Contact Us</a>
+        <a href="register.html">Register</a>
+    </nav>
+    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate"  href="Homepage.html"> <method="post" >
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+     
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required id="txtName">
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required id="txtPass">
+        
+      <button type="submit" >Login </button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="forgotpw.html">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<script>
+
+var modal = document.getElementById('id01');
+
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+</script>
+
+</header>
+
+
+
+<section class="home" id="home">
+
+    <div class="content">
+        <span>wedding planner agency</span>
+        <h3>we make every moment special!</h3>
+        <a href="#" class="btn">learm more</a>
+    </div>
+
+</section>
+
+
+
+<section class="vendor" id="vendor">
+
+    <div class="heading">
+        <h1>Top wedding vendors</h1>
+        <img src="images/header-img.png" alt="">
+    </div>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="images/img1.jpg" alt="">
+            <div class="info">
+                <h3>dressing</h3>
+                <p></p>
+                <a href="#" class="btn">learm more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/img2.jpg" alt="">
+            <div class="info">
+                <h3>Florist</h3>
+                <p></p>
+                <a href="#" class="btn">learm more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/img3.jpg" alt="">
+            <div class="info">
+                <h3>wedding cake</h3>
+                <p></p>
+                <a href="#" class="btn">learm more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/img4.jpg" alt="">
+            <div class="info">
+                <h3>venu and hall</h3>
+                <p></p>
+                <a href="#" class="btn">learm more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/img5.jpg" alt="">
+            <div class="info">
+                <h3>music and party</h3>
+                <p></p>
+                <a href="#" class="btn">learm more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/img6.jpg" alt="">
+            <div class="info">
+                <h3>photographer</h3>
+                <p></p>
+                <a href="#" class="btn">learm more</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<section class="clients" id="clients">
+
+    <div class="heading">
+        <h1>our previous clients</h1>
+        <img src="images/header-img.png" alt="">
+    </div>
+
+    <div class="row">
+
+        <div class="box-container">
+            <div class="box">
+                <img src="images/client-1.jpg" alt="">
+                <div class="info">
+                    <h3>01. Mark & Alice</h3>
+                    <p> <i class="fas fa-quote-left"></i> Thank you TOD team for giving me and my wife a perfect wedding at Callary.  There is nothing like receiving compliments from guests on decoration, service and especially food when attending their wedding.  Let's share the happiness TOD Restaurant!  <i class="fas fa-quote-right"></i> </p>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/client-2.jpg" alt="">
+                <div class="info">
+                    <h3>02. David & Kim</h3>
+                    <p> <i class="fas fa-quote-left"></i> Thank you Sales for flexible advice and support for my wedding.  From MC, reception music, reception and all of you very professional service.  Thank you to the entire TOD Restaurant team and wish everyone good health.  <i class="fas fa-quote-right"></i> </p>
+                </div>
+            </div>
+        </div>
+
+        <img src="images/divider.png" class="divider" alt="">
+
+        <div class="box-container">
+            <div class="box">
+                <div class="info">
+                    <h3>03. Tom & Jennie</h3>
+                    <p> <i class="fas fa-quote-left"></i> TOD restaurant delicious and full food.  Friendly and enthusiastic worker.  Beautiful lobby.  Glad to have had my wedding here.  Especially sales staff.  Thank you restaurant.  <i class="fas fa-quote-right"></i> </p>
+                </div>
+                <img src="images/client-3.jpg" alt="">
+            </div>
+            <div class="box">
+                <div class="info">
+                    <h3>04. Messi & Anna</h3>
+                    <p> <i class="fas fa-quote-left"></i> The lobby is beautiful, the decoration is simple but harmonious.  Delicious food, positive feedback from guests.  Thank you TOD restaurant for supporting a very meaningful wedding ceremony for me and my wife!  <i class="fas fa-quote-right"></i> </p>
+                </div>
+                <img src="images/client-4.jpg" alt="">
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<footer class="text-center">
+    <p><Copyright>Address: 13 Nguyen Huy Tu, Bach Dang, Hai Ba Trung, Ha Noi &copy; Email: lianthusweddingplanner123@gmail.com. </p>
+    <br> Group03 &copy; Copyright 2022. All rights reserved.
+</footer>
+
+
+
+</body>
+</html>

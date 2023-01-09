@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgba(24, 179, 158, 0.89);
+    background-image: url(wp5016673.jpg);
+    background-size: 100%;
+}
+
+
+
+.about-1{
+    margin: 30px;
+    padding: 5px;
+}
+.about-1 h1{
+    text-align: center;
+    color: rgb(16, 83, 184);
+    font-weight: bold;
+    font-size: 50px;
+}
+.about-1 h2{
+    text-align: center;
+    color: rgba(236, 230, 231, 0.836);
+    font-weight: bold;
+    font-size: 35px;
+}
+.about-1 p{
+    text-align: center;
+    padding: 3px;
+    color: rgba(230, 29, 29, 0);
+}
+
+
+
+.about-item{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background-color: white;
+    padding: 80px 30px;
+    box-shadow: 0 0 9px rgba(0,0,0.6);
+    font-size: 25px;
+}
+
+
+.about-item i{
+    font-size: 43px;
+    margin: 0;
+}
+
+.about-item h3{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+
+.about-item hr{
+    width: 46px;
+    height: 3px;
+    background-color: #ce4a4a;
+    margin: 0 auto;
+    border: none;
+    text-align: center;
+}
+
+
+.about-item:hover{
+    background-color: #c43c3c;
+}
+.about-item:hover i,
+.about-item:hover h3,
+.about-item:hover p{
+    color: #fff;
+}
+.about-item:hover hr{
+    background-color: rgb(155, 43, 112);
+}
+
+
+.about-item:hover i{
+    transform: translateY(-20px);
+}
+.about-item:hover i,
+.about-item:hover h3,
+.about-item:hover hr{
+    transition: all 400ms ease-in-out;
+}
+
+footer{
+    background: #212226;
+    padding: 20px;
+    font-size: 20px;
+}
+footer {
+    color: #fff;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
